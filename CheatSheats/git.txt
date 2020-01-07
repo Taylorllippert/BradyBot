@@ -1,0 +1,21 @@
+Set Git Config
+     git config --global user.name "name"
+     git config --global user.email "email"
+
+
+git pull		updates local branch with new commits from online
+git add file.txt 	adds the file to the next commit
+git status		shows which files are added and which are not
+git rm file.txt 	removes the file from the next commit
+git commit -m "hi"	creates a commit with the message "hi"
+git push 	        uploads staged commits
+
+Setting up SSH keys
+	in GitBash
+	$ ssh-keygen -t rsa -b 4096 -C "email"
+	hit enter for file and passphrase
+	$ ssh-add ~/.ssh/id_rsa
+	$ clip <~/.ssh/id_rsa 
+	in GitHub
+	Settings > ssh and GPG keys > new ssh key
+	paste in key and hit add
