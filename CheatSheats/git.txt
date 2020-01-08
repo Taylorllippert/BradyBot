@@ -1,21 +1,40 @@
-Set Git Config
-     git config --global user.name "name"
-     git config --global user.email "email"
-
+GIT COMMANDS
+-----------------------------------------------
+*make sure you are in the dev branch* 
 
 git pull		updates local branch with new commits from online
 git add file.txt 	adds the file to the next commit
 git status		shows which files are added and which are not
-git rm file.txt 	removes the file from the next commit
 git commit -m "hi"	creates a commit with the message "hi"
 git push 	        uploads staged commits
 
+
+git mv file.txt bettername.txt 	renames a file or moves location
+git checkout -- file.txt		restores file.txt
+git rm file.txt 	removes the file from the next commit
+
+
+BRANCHES
+------------------------------------------------
+git checkout -b dev			checks out the dev branch for the first time
+git checkout dev			after the first time this is how you switch to dev
+git branch feature1			creates a local branch called feature1
+git branch					lists all local branches
+git push --set-upstream origin dev		sets the push location to the online branch dev
+
+
+SET UP
+------------------------------------------------
 Setting up SSH keys
-	in GitBash
+	GitBash
 	$ ssh-keygen -t rsa -b 4096 -C "email"
-	hit enter for file and passphrase
+	hit enter for file and passphrase (3x)
+	$ eval $(ssh-agent -s)
 	$ ssh-add ~/.ssh/id_rsa
-	$ clip <~/.ssh/id_rsa 
-	in GitHub
+	$ clip <~/.ssh/id_rsa.pub
+	GitHub
 	Settings > ssh and GPG keys > new ssh key
 	paste in key and hit add
+Set Git Config
+     git config --global user.name "name"
+     git config --global user.email "email"
