@@ -1,0 +1,9 @@
+Software Install Guide and Versions
+Python 3.8.1 	https://www.python.org/downloads/release/python-381/
+VS code 		https://code.visualstudio.com/
+	Extensions
+		C/C++ 0.26.2
+		GitLense -- Git supercharged 10.2.0
+		PlatformIO IDE 1.10.0
+		Prettier - Code formatter 3.18.0
+		Python	2020.1.57204
