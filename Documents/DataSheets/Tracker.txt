@@ -1,0 +1,5 @@
+Tracking Module
+	Most operate at 5V vcc
+	3 Digital outputs = 1 when line is detected for each channel
+	 
+	
