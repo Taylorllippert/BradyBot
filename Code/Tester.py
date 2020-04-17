@@ -12,7 +12,18 @@ import time
         
 def SinglePinTest():
     print("Starting Single Pin Test")
-    return 0
+	#request pin to test from user
+		pin=input("enter pin")
+	
+	#set pin high
+		#GPIO.output(pin, GPIO.HIGH)
+
+	#wait for user to acknowledge and/timer
+		temp=input("select Enter to continue")
+	#set pin low
+ 		#GPIO.output(pin, GPIO.LOW)
+		
+   return 0
 
 
 def testSelector():
